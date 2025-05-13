@@ -25,6 +25,36 @@ const products = [
       price: "KSh 450",
       image: "/products/coffee.jpg",
     },
+    {
+      name: "Milk",
+      description: "Fresh nutritious Milk",
+      price: "KSh 150",
+      image: "/products/milk.jpeg",
+    },
+    {
+      name: "Sausages",
+      description: "Greatly cooked sausages",
+      price: "KSh 70",
+      image: "/products/sausages.png",
+    },
+    {
+      name: "Bacon",
+      description: "Great Bacon",
+      price: "KSh 100",
+      image: "/products/bacon.jpg",
+    },
+    {
+      name: "Baked Beans",
+      description: "Baked beans",
+      price: "KSh 100",
+      image: "/products/bakedbeans.jpg",
+    },
+    {
+      name: "Pastries",
+      description: "Freshly baked pastries",
+      price: "KSh 500",
+      image: "/products/cake.jpeg",
+    },
   ];
   
   export default products;

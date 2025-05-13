@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Demeters Gardens",
-  description: "Demeters Gardens, organic products, ",
+  description: "Demeters Gardens, organic products, pastries, kienyeji eggs",
 };
 
 export default function RootLayout({

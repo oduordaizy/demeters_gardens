@@ -17,7 +17,7 @@ const page = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, index) => (
           <div key={index} className="bg-[#f4e9d8] text-[#1c5d3b] p-6 rounded-xl shadow-md hover:shadow-lg transition">
-            <Image src={product.image} alt={product.name} className="rounded-lg mb-4 w-full h-48 object-cover" />
+            <Image src={product.image} alt={product.name} width={400} height={300} className="rounded-lg mb-4 w-full h-48 object-cover" />
             <h2 className="text-2xl font-bold mb-2">{product.name}</h2>
             <p className="mb-4">{product.description}</p>
             <div className="flex justify-between items-center">
