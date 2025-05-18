@@ -3,7 +3,6 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Link from "next/link";
-import products from "./data/products";
 import testimonials from "./data/testimonials";
 import { motion } from "framer-motion";
 import HeroSlider from "./components/HeroSlider";
