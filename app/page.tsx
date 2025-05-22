@@ -8,16 +8,11 @@ import { motion } from "framer-motion";
 import HeroSlider from "./components/HeroSlider";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+import products from "./data/products";
+import { ImOpt } from "react-icons/im";
+import { categories } from "./data/products";
 
-const categories = [
-  { name: "Vegetables", image: "/categories/vegetables.jpeg" },
-  { name: "Fruits", image: "/categories/fruits.jpeg" },
-  { name: "Butchery", image: "/categories/butchery.jpeg" },
-  { name: "Pastries", image: "/categories/pastries.jpeg" },
-  { name: "Pre-cooked foods", image: "/categories/precooked.jpeg" },
-  { name: "Spices and Herbs", image: "/categories/spices.jpeg" },
-  { name: "Herbal Tea", image: "/categories/herbaltea.jpeg" },
-];
+
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -41,9 +36,17 @@ export default function Home() {
         <HeroSlider />
 
         <section className="py-16 px-4 sm:px-6 relative">
-      <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1d4d4f]">
-        Popular Categories
-      </h2>
+        <div className="relative mb-10">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-[#1d4d4f]">
+          Popular Categories
+        </h2>
+        <Link href="/products">
+          <button className="absolute right-0 top-0 text-[#1d4d4f] px-4 py-2 rounded font-bold hover:bg-[#1c5d3b] transition">
+            View more
+          </button>
+        </Link>
+      </div>
+
 
       {/* Scroll Buttons */}
       <button
@@ -83,19 +86,12 @@ export default function Home() {
       </div>
     </section>
 
-    {/* See More Button */}
-    <div className="text-center mt-8">
-        <Link href="/products">
-          <button className="bg-[#4caf50] text-white px-6 py-2 rounded hover:bg-[#1c5d3b] transition">
-            See More Products
-          </button>
-        </Link>
-      </div>
+   
 
         {/* Premium Packages */}
         <section className="py-16 text-[#1d4d4f] px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-10 text-[#1c5d3b]">
+            <h2 className="text-4xl font-bold text-center mb-10 text-[#1d4d4f]">
               Premium Packages
             </h2>
             <p className="text-center max-w-3xl mx-auto mb-12">
@@ -107,13 +103,13 @@ export default function Home() {
               {/* Package 1 */}
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-left">
                 <Image
-                  src="/packages/premium1.jpg"
+                  src="/packages/hellofresh.png"
                   alt="Hello Fresh"
                   width={600}
                   height={300}
                   className="rounded-lg mb-4 w-full h-48 object-cover"
                 />
-                <h3 className="text-2xl font-semibold text-[#1c5d3b] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1d4d4f] mb-2">
                   Hello Fresh
                 </h3>
                 <ul className="list-disc pl-5 text-[#1d4d4f] mb-4 space-y-2">
@@ -132,13 +128,13 @@ export default function Home() {
               {/* Package 2 */}
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-left">
                 <Image
-                  src="/packages/premium2.jpg"
+                  src="/packages/whole30.png"
                   alt="Whole30"
                   width={600}
                   height={300}
                   className="rounded-lg mb-4 w-full h-48 object-cover"
                 />
-                <h3 className="text-2xl font-semibold text-[#1c5d3b] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1d4d4f] mb-2">
                   Whole30
                 </h3>
                 <ul className="list-disc pl-5 text-[#1d4d4f] mb-4 space-y-2">

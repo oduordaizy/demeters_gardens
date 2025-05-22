@@ -38,7 +38,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="ml-6 bg-[#4caf50] text-white px-4 py-2 rounded hover:bg-[#1c5d3b]">
+          <button className="ml-6 bg-[#1d4d4f] text-white px-4 py-2 rounded hover:text-[#a2c11c]">
             Order
           </button>
         </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
           ))}
           <li>
             <Link href="/products">
-            <button className="w-full bg-[#1c5d3b] text-white px-4 py-2 rounded hover:bg-[#4caf50]">
+            <button className="w-full bg-[#1d4d4f] text-white px-4 py-2 rounded hover:text-[#a2c11c]">
               Order 
             </button>
             </Link>
